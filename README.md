@@ -1,7 +1,20 @@
 # stylelint-no-z-index
 Stylelint rule for preventing the use of z-index
 
-Example of rules that will pass the linting:
+## Usage
+    // .stylelintrc
+    {
+      "plugins": [
+        "stylelint-no-z-index"
+      ],
+      "rules": {
+       // ...
+       "plugin/no-z-index": 2,
+       // ...
+      }
+    }
+
+## Example of rules that will pass the linting:
 
     .foo {
        background: red;
@@ -23,7 +36,7 @@ Example of rules that will pass the linting:
        z-index: unset;
     }
    
-Example of rules that won't pass the linting:
+## Example of rules that won't pass the linting:
 
     .foo {
       z-index: -1;

@@ -1,0 +1,22 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "rules": {
+    "semi" : [2, "never"],
+    "max-len": [2, 200, 2],
+    "handle-callback-err": 0,
+    "camelcase": 0,
+    "no-console": 2,
+
+    //
+    // Best Practices
+    //
+    "curly": 2, // specify curly brace conventions for all control statements
+    "eqeqeq": 2 // require the use of === and !==
+  }
+}

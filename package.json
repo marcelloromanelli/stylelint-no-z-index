@@ -1,0 +1,41 @@
+{
+  "name": "stylelint-no-z-index",
+  "version": "1.0.0",
+  "description": "Stylelint rule for preventing the use of z-index",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelloromanelli/stylelint-no-z-index.git"
+  },
+  "keywords": [
+    "stylelint-plugin",
+    "z-index"
+  ],
+  "author": "Marcello Romanelli <marcelloromanelli@me.com> (http://marcelloromanelli.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcelloromanelli/stylelint-no-z-index/issues"
+  },
+  "homepage": "https://github.com/marcelloromanelli/stylelint-no-z-index#readme",
+  "dependencies": {
+    "stylelint": "^7.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.14.0",
+    "eslint": "^3.5.0",
+    "eslint-config-standard": "^6.0.1",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0",
+    "stylelint-test-rule-tape": "^0.2.0"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

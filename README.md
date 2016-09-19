@@ -1,6 +1,9 @@
 # stylelint-no-z-index
 Stylelint rule for preventing the use of z-index
 
+## Install
+    npm install --save-dev stylelint-no-z-index 
+
 ## Usage
     // .stylelintrc
     {

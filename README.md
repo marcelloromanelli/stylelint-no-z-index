@@ -2,7 +2,7 @@
 Stylelint rule for preventing the use of z-index
 
 ## Install
-    npm install --save-dev stylelint-no-z-index 
+    npm install --save-dev stylelint-no-z-index
 
 ## Usage
     // .stylelintrc
@@ -38,18 +38,21 @@ Stylelint rule for preventing the use of z-index
     .foo {
        z-index: unset;
     }
-   
+
+    .foo {
+       z-index: var(--z-index--default);
+    }
+
 ## Example of rules that won't pass the linting:
 
     .foo {
       z-index: -1;
     }
-    
+
     .foo {
       z-index: 0;
     }
-    
+
     .foo {
       z-index: 100;
     }
-   

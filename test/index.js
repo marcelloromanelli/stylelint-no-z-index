@@ -17,6 +17,9 @@ test(fn.rule, {
     },
     {
       code: 'a { z-index: unset; }'
+    },
+    {
+      code: ':root { --z-index : 1; } a { z-index: var(--z-index); }'
     }
   ],
   reject: [

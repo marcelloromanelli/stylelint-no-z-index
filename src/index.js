@@ -14,6 +14,9 @@ module.exports = stylelint.createPlugin(ruleName, (options) => (cssRoot, result)
     const value = decl.value
     if (allowedValue.indexOf(value.toLowerCase()) >= 0) return
 
+    const cssVarRegex = /var\(.*\)/
+    if (cssVarRegex.test(value)) return
+
     stylelint.utils.report({
       ruleName: ruleName,
       result: result,

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marcelloromanelli/stylelint-no-z-index.svg?branch=master)](https://travis-ci.org/marcelloromanelli/stylelint-no-z-index)
+
 # stylelint-no-z-index
 Stylelint rule for preventing the use of z-index
 

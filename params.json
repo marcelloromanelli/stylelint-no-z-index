@@ -1,0 +1,6 @@
+{
+  "name": "Stylelint-no-z-index",
+  "tagline": "Stylelint rule for preventing the use of z-index",
+  "body": "[![Build Status](https://travis-ci.org/marcelloromanelli/stylelint-no-z-index.svg?branch=master)](https://travis-ci.org/marcelloromanelli/stylelint-no-z-index)\r\n\r\n# stylelint-no-z-index\r\nStylelint rule for preventing the use of z-index\r\n\r\n## Install\r\n    npm install --save-dev stylelint-no-z-index\r\n\r\n## Usage\r\n    // .stylelintrc\r\n    {\r\n      \"plugins\": [\r\n        \"stylelint-no-z-index\"\r\n      ],\r\n      \"rules\": {\r\n       // ...\r\n       \"plugin/no-z-index\": 2,\r\n       // ...\r\n      }\r\n    }\r\n\r\n## Example of rules that will pass the linting:\r\n\r\n    .foo {\r\n       background: red;\r\n    }\r\n\r\n    .foo {\r\n       z-index: auto;\r\n    }\r\n\r\n    .foo {\r\n       z-index: inherit;\r\n    }\r\n\r\n    .foo {\r\n       z-index: initial;\r\n    }\r\n\r\n    .foo {\r\n       z-index: unset;\r\n    }\r\n\r\n    .foo {\r\n       z-index: var(--z-index--default);\r\n    }\r\n\r\n## Example of rules that won't pass the linting:\r\n\r\n    .foo {\r\n      z-index: -1;\r\n    }\r\n\r\n    .foo {\r\n      z-index: 0;\r\n    }\r\n\r\n    .foo {\r\n      z-index: 100;\r\n    }\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

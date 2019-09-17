@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/marcelloromanelli/stylelint-no-z-index#readme",
   "dependencies": {
-    "stylelint": "^7.2.0"
+    "stylelint": "^11.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
